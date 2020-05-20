@@ -2,19 +2,20 @@ package golang
 
 import (
 	"bytes"
-	"github.com/stretchr/testify/assert"
 	"os/exec"
 	"strings"
 	"testing"
+)
+
+import (
+	"github.com/stretchr/testify/assert"
 )
 
 func TestExample(t *testing.T) {
 	file := "/Users/patrick/GoProjects/dubbo-samples/golang/helloworld/dubbo/docker/docker-compose.yaml"
 	cmd := exec.Command("docker-compose", "-f", file, "up", "--build", "--abort-on-container-exit")
 	var out bytes.Buffer
-	var stderr bytes.Buffer
 	cmd.Stdout = &out
-	cmd.Stderr = &stderr
 	println(cmd.String())
 	err := cmd.Run()
 	assert.Nil(t, err)

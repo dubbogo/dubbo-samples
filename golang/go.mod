@@ -3,13 +3,9 @@ module github.com/apache/dubbo-samples/golang
 require (
 	github.com/apache/dubbo-go v1.4.0-rc1
 	github.com/apache/dubbo-go-hessian2 v1.4.0
+	github.com/codahale/hdrhistogram v0.0.0-20161010025455-3a0bb77429bd // indirect
 	github.com/docker/distribution v2.7.1+incompatible // indirect
 	github.com/docker/docker v1.13.1
-	github.com/emicklei/go-restful/v3 v3.0.0
-	github.com/ory/dockertest v3.3.4+incompatible
-	github.com/apache/dubbo-go v1.4.1
-	github.com/apache/dubbo-go-hessian2 v1.4.0
-	github.com/codahale/hdrhistogram v0.0.0-20161010025455-3a0bb77429bd // indirect
 	github.com/emicklei/go-restful/v3 v3.0.0
 	github.com/golang/protobuf v1.3.2
 	github.com/opentracing/opentracing-go v1.1.0
