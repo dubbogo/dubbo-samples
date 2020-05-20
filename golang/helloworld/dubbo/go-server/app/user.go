@@ -46,7 +46,7 @@ type UserProvider struct {
 
 func (u *UserProvider) GetUser(ctx context.Context, req []interface{}) (*User, error) {
 	println("req:%#v", req)
-	rsp := User{"A001", "Alex Stocks", 18, time.Now()}
+	rsp := User{"A001", "Alex Stocks", 18, time.Date(2013, 1, 2, 0, 0, 0, 0, time.UTC)}
 	println("rsp:%#v", rsp)
 	return &rsp, nil
 }

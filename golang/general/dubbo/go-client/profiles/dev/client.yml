@@ -19,16 +19,11 @@ application:
 registries :
   "hangzhouzk":
     protocol: "zookeeper"
-    timeout	: "3s"
+    timeout	: "300s"
     address: "127.0.0.1:2181"
     username: ""
     password: ""
-  "shanghaizk":
-    protocol: "zookeeper"
-    timeout	: "3s"
-    address: "127.0.0.1:2182"
-    username: ""
-    password: ""
+
 
 references:
   "UserProvider":
