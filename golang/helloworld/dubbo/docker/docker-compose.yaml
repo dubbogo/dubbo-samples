@@ -1,0 +1,34 @@
+version: '3.1'
+
+services:
+  client:
+    build:
+      context: ../go-client
+      dockerfile: Dockerfile
+    image: dubbogo/helloworld-client:latest
+    container_name: client
+    network_mode: host
+    depends_on:
+      - server
+      - zoo1
+    entrypoint: "/wait-for-it.sh server:20000 -- ./target/client"
+  server:
+    build:
+      context: ../go-server
+      dockerfile: Dockerfile
+    image: dubbogo/helloworld-server:latest
+    container_name: server
+    network_mode: host
+    depends_on:
+      - zoo1
+    ports:
+      - 20000:20000
+    entrypoint: "/wait-for-it.sh zoo1:2181 -- ./target/server"
+  zoo1:
+    image: zookeeper
+    container_name: zookeeper_1
+    network_mode: host
+    ports:
+      - 2181:2181
+
+
