@@ -25,7 +25,7 @@ getty:
     tcp_write_timeout : "5s"
     wait_timeout : "1s"
     max_msg_len : 4096
-    session_name : "client"
+    session_name : "grpc-grpc-client"
 tm:
   commit_retry_count: 5
   rollback_retry_count: 5

@@ -49,7 +49,6 @@ var (
 	survivalTimeout int = 10e9
 )
 
-
 // they are necessary:
 // 		export CONF_CONSUMER_FILE_PATH="xxx"
 // 		export APP_LOG_CONF_FILE="xxx"
@@ -79,7 +78,7 @@ func main() {
 	if err != nil {
 		panic(err)
 	}
-	gxlog.CInfo("client response result: %v\n", reply)
+	gxlog.CInfo("grpc-grpc-client response result: %v\n", reply)
 	initSignal()
 }
 

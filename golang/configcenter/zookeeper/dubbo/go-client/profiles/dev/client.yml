@@ -1,8 +1,8 @@
-# dubbo client yaml configure file
+# dubbo grpc-grpc-client yaml configure file
 
 # application config
 application:
-  name  : "user-info-client"
+  name  : "user-info-grpc-grpc-client"
 
 config_center:
   protocol: "zookeeper"
@@ -33,4 +33,4 @@ protocol_conf:
       tcp_write_timeout: "5s"
       wait_timeout: "1s"
       max_msg_len: 1024000
-      session_name: "client"
+      session_name: "grpc-grpc-client"

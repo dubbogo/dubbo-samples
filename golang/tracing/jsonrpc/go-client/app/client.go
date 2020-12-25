@@ -79,7 +79,7 @@ func initZipkin() {
 	reporter := zipkinhttp.NewReporter("http://localhost:9411/api/v2/spans")
 
 	// create our local service endpoint
-	endpoint, err := zipkin.NewEndpoint("client-service", "myservice.mydomain.com:80")
+	endpoint, err := zipkin.NewEndpoint("grpc-grpc-client-service", "myservice.mydomain.com:80")
 	if err != nil {
 		logger.Errorf("unable to create local endpoint: %+v\n", err)
 	}

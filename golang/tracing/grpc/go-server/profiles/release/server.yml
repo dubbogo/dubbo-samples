@@ -2,7 +2,7 @@
 application:
   organization : "ikurento.com"
   name : "BDTService"
-  module : "dubbogo say-hello client"
+  module : "dubbogo say-hello grpc-grpc-client"
   version : "0.0.1"
   owner : "ZX"
   environment : "dev"

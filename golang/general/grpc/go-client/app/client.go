@@ -63,7 +63,7 @@ func main() {
 	if err != nil {
 		panic(err)
 	}
-	gxlog.CInfo("client response result: %v\n", reply)
+	gxlog.CInfo("grpc-grpc-client response result: %v\n", reply)
 	initSignal()
 }
 

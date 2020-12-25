@@ -127,7 +127,7 @@ mvn exec:java -Dexec.mainClass=org.apache.dubbo.samples.client.Application
     "timestamp": 1539078437064641,
     "duration": 266242,
     "localEndpoint": {
-      "serviceName": "client",
+      "serviceName": "grpc-grpc-client",
       "ipv4": "192.168.99.1"
     },
     "remoteEndpoint": {

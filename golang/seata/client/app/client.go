@@ -37,8 +37,8 @@ import (
 	_ "github.com/apache/dubbo-go/protocol/dubbo"
 	_ "github.com/apache/dubbo-go/registry/protocol"
 	"github.com/dk-lockdown/seata-golang/client"
-	config2 "github.com/dk-lockdown/seata-golang/client/config"
 	"github.com/dk-lockdown/seata-golang/client/tm"
+	config2 "github.com/dk-lockdown/seata-golang/grpc-grpc-client/config"
 
 	_ "github.com/apache/dubbo-go/filter/filter_impl"
 
