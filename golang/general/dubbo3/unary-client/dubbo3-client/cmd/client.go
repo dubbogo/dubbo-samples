@@ -44,7 +44,7 @@ func init() {
 	config.SetConsumerService(grpcGreeterImpl)
 }
 
-// need to setup environment variable "CONF_CONSUMER_FILE_PATH" to "conf/grpc-grpc-client.yml" before run
+// need to setup environment variable "CONF_CONSUMER_FILE_PATH" to "conf/client.yml" before run
 func main() {
 	config.Load()
 	time.Sleep(3 * time.Second)
@@ -64,7 +64,7 @@ func main() {
 			if err != nil {
 				panic(err)
 			}
-			gxlog.CInfo("grpc-grpc-client response result: %v\n", reply)
+			gxlog.CInfo("client response result: %v\n", reply)
 			//wg.Done()
 			wg.Done()
 		}()

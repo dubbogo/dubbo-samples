@@ -141,7 +141,7 @@ var _ grpc.ClientConn
 // is compatible with the grpc package it is being compiled against.
 const _ = grpc.SupportPackageIsVersion4
 
-// Dubbo3GreeterClient is the grpc-grpc-client API for Dubbo3Greeter service.
+// Dubbo3GreeterClient is the client API for Dubbo3Greeter service.
 //
 // For semantics around ctx use and closing/ending streaming RPCs, please refer to https://godoc.org/google.golang.org/grpc#ClientConn.NewStream.
 type Dubbo3GreeterClient interface {
@@ -297,7 +297,7 @@ func (c *dubbo3greeterDubbo3Client) Dubbo3SayHello2(ctx context.Context, in *Dub
 	return out, nil
 }
 
-// Dubbo3GreeterClientImpl is the grpc-grpc-client API for Dubbo3Greeter service.
+// Dubbo3GreeterClientImpl is the client API for Dubbo3Greeter service.
 //
 // For semantics around ctx use and closing/ending streaming RPCs, please refer to https://godoc.org/google.golang.org/grpc#ClientConn.NewStream.
 type Dubbo3GreeterClientImpl struct {

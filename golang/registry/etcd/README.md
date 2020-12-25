@@ -69,11 +69,11 @@ protocol_conf:
 ## go-client/profiles/dev/client.yml
 
 ```yaml
-# dubbo grpc-grpc-client yaml configure file
+# dubbo client yaml configure file
 
 
 check: true
-# grpc-grpc-client
+# client
 request_timeout : "3s"
 # connect timeout
 connect_timeout : "3s"
@@ -82,7 +82,7 @@ connect_timeout : "3s"
 application:
   organization : "ikurento.com"
   name  : "BDTService"
-  module : "dubbogo user-info grpc-grpc-client"
+  module : "dubbogo user-info client"
   version : "0.0.1"
   owner : "ZX"
   environment : "dev"
@@ -128,7 +128,7 @@ protocol_conf:
       tcp_write_timeout: "5s"
       wait_timeout: "1s"
       max_msg_len: 1024000
-      session_name: "grpc-grpc-client"
+      session_name: "client"
 ```
 
 ## import etcd

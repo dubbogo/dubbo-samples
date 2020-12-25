@@ -1,12 +1,12 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: grpc-grpc-client
+  name: client
 spec:
   restartPolicy: Never
   containers:
-  - image: registry.cn-hangzhou.aliyuncs.com/scottwang/dubbogo-grpc-grpc-client
-    name: grpc-grpc-client
+  - image: registry.cn-hangzhou.aliyuncs.com/scottwang/dubbogo-client
+    name: client
     env:
      - name: NAMESPACE
        valueFrom:

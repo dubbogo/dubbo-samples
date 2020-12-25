@@ -16,7 +16,7 @@ const (
 )
 
 func main() {
-	// Set up a connection to the grpc-grpc-client.
+	// Set up a connection to the client.
 	conn, err := grpc.Dial(address, grpc.WithInsecure())
 	if err != nil {
 		log.Fatalf("did not connect: %v", err)
@@ -24,7 +24,7 @@ func main() {
 	defer conn.Close()
 	c := pb.NewDubbo3GreeterClient(conn)
 
-	// Contact the grpc-grpc-client and print out its response.
+	// Contact the client and print out its response.
 	name := defaultName
 	if len(os.Args) > 1 {
 		name = os.Args[1]
@@ -37,7 +37,7 @@ func main() {
 			if err != nil {
 				log.Fatalf("could not greet: %v", err)
 			}
-			log.Printf("####### get grpc-grpc-client %+v", r)
+			log.Printf("####### get client %+v", r)
 			wg.Done()
 		}()
 	}

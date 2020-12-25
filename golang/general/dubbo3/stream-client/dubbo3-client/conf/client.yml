@@ -1,7 +1,7 @@
-# dubbo grpc-grpc-client yaml configure file
+# dubbo client yaml configure file
 
 check: true
-# grpc-grpc-client
+# client
 request_timeout: "3s"
 # connect timeout
 connect_timeout: "3s"
@@ -10,7 +10,7 @@ connect_timeout: "3s"
 application:
   organization: "dubbo.io"
   name: "GreeterGrpcConsumer"
-  module: "dubbo-go greeter grpc grpc-grpc-client"
+  module: "dubbo-go greeter grpc client"
   version: "0.0.1"
   environment: "dev"
 
@@ -57,4 +57,4 @@ protocol_conf:
       tcp_write_timeout: "5s"
       wait_timeout: "1s"
       max_msg_len: 10240
-      session_name: "grpc-grpc-client"
+      session_name: "client"

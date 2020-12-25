@@ -1,7 +1,7 @@
-# dubbo grpc-grpc-client yaml configure file
+# dubbo client yaml configure file
 
 check: true
-# grpc-grpc-client
+# client
 request_timeout : "3s"
 # connect timeout
 connect_timeout : "3s"
@@ -10,7 +10,7 @@ connect_timeout : "3s"
 application:
   organization : "ikurento.com"
   name  : "BDTService"
-  module : "dubbogo user-info grpc-grpc-client"
+  module : "dubbogo user-info client"
   version : "0.0.1"
   owner : "ZX"
   environment : "test"

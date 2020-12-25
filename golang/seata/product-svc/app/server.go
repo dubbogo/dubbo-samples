@@ -37,7 +37,7 @@ import (
 	_ "github.com/apache/dubbo-go/registry/protocol"
 	"github.com/dk-lockdown/seata-golang/client"
 	"github.com/dk-lockdown/seata-golang/client/at/exec"
-	config2 "github.com/dk-lockdown/seata-golang/grpc-grpc-client/config"
+	config2 "github.com/dk-lockdown/seata-golang/client/config"
 
 	_ "github.com/apache/dubbo-go/common/proxy/proxy_factory"
 	_ "github.com/apache/dubbo-go/filter/filter_impl"

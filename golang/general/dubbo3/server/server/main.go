@@ -56,7 +56,7 @@ func main() {
 	}
 	s := grpc.NewServer()
 	pb.RegisterDubbo3GreeterServer(s, &server{})
-	// Register reflection service on gRPC grpc-grpc-client.
+	// Register reflection service on gRPC client.
 	reflection.Register(s)
 	if err := s.Serve(lis); err != nil {
 		log.Fatalf("failed to serve: %v", err)

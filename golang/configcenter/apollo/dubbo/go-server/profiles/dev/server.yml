@@ -56,4 +56,4 @@ protocol_conf:
       tcp_write_timeout: "5s"
       wait_timeout: "1s"
       max_msg_len: 10240
-      session_name: "grpc-grpc-client"
+      session_name: "client"
