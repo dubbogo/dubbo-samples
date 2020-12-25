@@ -57,7 +57,7 @@ func main() {
 	ctx := context.Background()
 	ctx = context.WithValue(ctx, "tri-req-id", "id value")
 	wg := sync.WaitGroup{}
-	for i := 0; i < 3; i++ {
+	for i := 0; i < 1; i++ {
 		wg.Add(1)
 		go func() {
 			err := grpcGreeterImpl.Dubbo3SayHello2(ctx, req, reply)
